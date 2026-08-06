@@ -118,13 +118,13 @@ export default function Portfolio() {
 
         {/* Left Sidebar (Profile) */}
         <aside className="w-full md:w-1/4 flex-shrink-0 flex flex-col gap-6">
-          <div className="flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-0">
-            <div className="w-24 h-24 md:w-full md:h-auto md:aspect-square rounded-full border border-border overflow-hidden mb-4 bg-surface flex items-center justify-center">
-              <Terminal className="w-12 h-12 md:w-32 md:h-32 text-text-muted" />
+          <div className="flex flex-col items-start gap-4 md:gap-0">
+            <div className="hidden md:flex md:w-full md:h-auto md:aspect-square rounded-full border border-border overflow-hidden mb-4 bg-surface items-center justify-center">
+              <Terminal className="md:w-32 md:h-32 text-text-muted" />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <h1 className="text-2xl font-bold font-code text-text-main leading-tight">Mriganka Mahanta</h1>
-              <p className="text-xl font-light text-text-muted mb-4">Mriga195</p>
+              <p className="text-xl font-light text-text-muted mb-2 md:mb-4">Mriga195</p>
 
               <div className="text-text-main text-sm mb-4 leading-relaxed">
                 Full-Stack Web Developer & Competitive Programmer. Building scalable architectures and solving complex algorithms.
@@ -179,41 +179,39 @@ export default function Portfolio() {
           </div>
 
           {activeTab === 'Overview' && (
-            <div className="flex flex-col gap-6 animate-in fade-in duration-300">
-              {/* ASCII Hero Readme */}
-              <div className="border border-border rounded-md bg-surface overflow-hidden">
-                <div className="bg-background border-b border-border px-4 py-2 text-xs font-code text-text-muted">
-                  README.md
+            <div className="animate-in fade-in duration-300">
+              <div className="w-full border border-border rounded-md bg-surface mb-6">
+                <div className="bg-[#1c2128] border-b border-border px-4 py-2 font-code text-sm flex items-center justify-between">
+                  <span>Mriganka/README.md</span>
                 </div>
-                <div className="p-6 md:p-8">
-                  <div className="font-code text-success text-[10px] sm:text-xs md:text-sm whitespace-pre overflow-x-auto select-all leading-tight mb-8">
-                    {` __  __ ____  ___ ____    _    _   _ _  __    _    
+                <div className="p-4 md:p-8 overflow-hidden w-full max-w-full">
+                  <div className="font-code text-success text-[6px] sm:text-[10px] md:text-xs whitespace-pre overflow-x-auto select-all leading-tight mb-6 max-w-full pb-4">
+{` __  __ ____  ___ ____    _    _   _ _  __    _    
 |  \\/  |  _ \\|_ _/ ___|  / \\  | \\ | | |/ /   / \\   
 | |\\/| | |_) || | |  _  / _ \\ |  \\| | ' /   / _ \\  
 | |  | |  _ < | | |_| |/ ___ \\| |\\  | . \\  / ___ \\ 
-|_|  |_|_| \\_\\___\\____/_/   \\_\\_| \\_|_|\\_\\/_/   \\_\\
-                                                   
+|_|  |_|_| \\_\\___|____/_/   \\_\\_| \\_|_|\\_\\_/   \\_\\
+
  __  __    _    _   _    _    _   _ _____  _    
 |  \\/  |  / \\  | | | |  / \\  | \\ | |_   _|/ \\   
 | |\\/| | / _ \\ | |_| | / _ \\ |  \\| | | | / _ \\  
 | |  | |/ ___ \\|  _  |/ ___ \\| |\\  | | |/ ___ \\ 
 |_|  |_/_/   \\_\\_| |_/_/   \\_\\_| \\_| |_/_/   \\_\\`}
                   </div>
-                  <h2 className="text-2xl font-semibold border-b border-border pb-2 mb-4">
-                    Hi there 👋, I'm Mriganka
+                  <h2 className="text-xl md:text-2xl font-semibold border-b border-border pb-2 mb-4">
+                    Hi there, I'm Mriganka
                   </h2>
-                  <p className="text-base text-text-main leading-relaxed mb-4">
+                  <p className="text-sm md:text-base text-text-main leading-relaxed mb-4">
                     I am a highly motivated student pursuing a B.Tech degree at Jorhat Engineering College (Class of 2028). I specialize in modern full-stack web engineering and algorithmic problem-solving.
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-text-main ml-2">
-                    <li>🔭 I’m currently working on scalable Next.js & Node.js web applications</li>
-                    <li>🌱 I’m currently learning advanced distributed systems and WebGL</li>
-                    <li>🏆 Ranked Top 10 nationally in Web Technologies at IndiaSkills</li>
-                    <li>📫 How to reach me: <strong>mrigank195@gmail.com</strong></li>
+                  <ul className="list-disc list-inside space-y-2 text-text-main text-sm md:text-base ml-2">
+                    <li>I’m currently working on scalable Next.js & Node.js web applications</li>
+                    <li>I’m currently learning advanced distributed systems and WebGL</li>
+                    <li>Ranked Top 10 nationally in Web Technologies at IndiaSkills</li>
+                    <li>How to reach me: <strong>mrigank195@gmail.com</strong></li>
                   </ul>
                 </div>
               </div>
-
             </div>
           )}
 
