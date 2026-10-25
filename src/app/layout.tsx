@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Martian_Mono, Red_Hat_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const redHatMono = Red_Hat_Mono({
+  variable: "--font-red-hat-mono",
   subsets: ["latin"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const martianMono = Martian_Mono({
+  variable: "--font-martian-mono",
   subsets: ["latin"],
+  axes: ["wdth"],
 });
 
 export const metadata: Metadata = {
-  title: "Mriganka Mahanta | Full-Stack Developer",
-  description: "IndiaSkills National Top 10 Web Developer Full-stack developer, co-founder of MechMate, and C++ problem solver from Jorhat, Assam.",
+  title: "Mriganka Mahanta | C++ & Systems Engineer",
+  description: "C++ and systems software engineer in training. Full-stack engineer at Encamp Adventures, co-founder of MechMate, IndiaSkills National Top 10.",
   keywords: ["Mriganka Mahanta", "Full-Stack Developer", "Next.js", "Node.js", "Competitive Programming", "IndiaSkills", "Jorhat Engineering College", "React", "TypeScript", "C++", "Assam Web Developer"],
   authors: [{ name: "Mriganka Mahanta", url: "https://github.com/Mriga195" }],
   creator: "Mriganka Mahanta",
   openGraph: {
-    title: "Mriganka Mahanta | Full-Stack Developer",
-    description: "IndiaSkills National Top 10 Web Developer Full-stack developer and co-founder of MechMate.",
+    title: "Mriganka Mahanta | C++ & Systems Engineer",
+    description: "C++ and systems software engineer in training. Full-stack engineer at Encamp Adventures, co-founder of MechMate, IndiaSkills National Top 10.",
     url: "https://mriganka-portfolio.mrigank195.workers.dev",
     siteName: "Mriganka Mahanta Portfolio",
     locale: "en_IN",
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mriganka Mahanta | Full-Stack Developer",
-    description: "IndiaSkills National Top 10 Web Developer Full-stack developer and co-founder of MechMate.",
+    title: "Mriganka Mahanta | C++ & Systems Engineer",
+    description: "C++ and systems software engineer in training. Full-stack engineer at Encamp Adventures, co-founder of MechMate, IndiaSkills National Top 10.",
   },
   robots: {
     index: true,
@@ -50,9 +51,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased overflow-x-hidden`}
+        className={`${redHatMono.variable} ${martianMono.variable} antialiased`}
       >
         {children}
       </body>
