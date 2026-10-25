@@ -14,14 +14,14 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Mriganka Mahanta | Full-Stack Developer",
-  description: "IndiaSkills National Top 10 Web Developer building scalable Next.js & Node.js web applications. Expert in modern full-stack development, C++, and competitive programming.",
+  description: "IndiaSkills National Top 10 Web Developer Full-stack developer, co-founder of MechMate, and C++ problem solver from Jorhat, Assam.",
   keywords: ["Mriganka Mahanta", "Full-Stack Developer", "Next.js", "Node.js", "Competitive Programming", "IndiaSkills", "Jorhat Engineering College", "React", "TypeScript", "C++", "Assam Web Developer"],
   authors: [{ name: "Mriganka Mahanta", url: "https://github.com/Mriga195" }],
   creator: "Mriganka Mahanta",
   openGraph: {
     title: "Mriganka Mahanta | Full-Stack Developer",
-    description: "IndiaSkills National Top 10 Web Developer building scalable Next.js & Node.js web applications. Expert in modern full-stack development.",
-    url: "https://mriganka-portfolio.vercel.app",
+    description: "IndiaSkills National Top 10 Web Developer Full-stack developer and co-founder of MechMate.",
+    url: "https://mriganka-portfolio.mrigank195.workers.dev",
     siteName: "Mriganka Mahanta Portfolio",
     locale: "en_IN",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mriganka Mahanta | Full-Stack Developer",
-    description: "IndiaSkills National Top 10 Web Developer building scalable Next.js & Node.js web applications.",
+    description: "IndiaSkills National Top 10 Web Developer Full-stack developer and co-founder of MechMate.",
   },
   robots: {
     index: true,

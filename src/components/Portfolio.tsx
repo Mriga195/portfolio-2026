@@ -17,40 +17,39 @@ const LinkedinIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
 
 const PROJECTS = [
   {
-    name: 'real-estate-fullstack',
-    description: 'A comprehensive full-stack real estate platform. Handles property listings, user authentication, and advanced search filters using modern web technologies to provide a seamless property browsing experience.',
-    tech: 'TypeScript',
-    techColor: '#3178c6',
+    name: 'mechmate',
+    description: 'Co-founder. Doorstep bike and car repair service in Delhi NCR and Assam. Co-built the platform: booking flow, reviews, invoicing and an admin dashboard for profit and expenses. Next.js, Prisma, Neon PostgreSQL, deployed on Cloudflare Workers.',
+    tech: 'JavaScript',
+    techColor: '#f1e05a',
+    badge: 'Startup',
+    link: 'https://mechmate.in',
+    live: 'https://mechmate.in'
+  },
+  {
+    name: 'queueless',
+    description: 'Canteen pre-order and pickup system. Students pay ahead and collect with a 4-digit code; staff work a live order queue. Razorpay payments with a signed webhook, 3 roles, MongoDB aggregation sales reports, integration tests.',
+    tech: 'JavaScript',
+    techColor: '#f1e05a',
     stars: '0',
-    forks: '0',
-    link: 'https://github.com/Mriga195/real-estate-fullstack'
+    link: 'https://github.com/Mriga195/queueless',
+    live: 'https://queueless-bywb.onrender.com'
+  },
+  {
+    name: 'loksamadhan',
+    description: 'Hackathon team project. Citizens report civic issues and see similar existing reports before filing a duplicate; officers move each issue from Submitted to Resolved. React, Node.js, Express, MongoDB.',
+    tech: 'JavaScript',
+    techColor: '#f1e05a',
+    stars: '0',
+    link: 'https://github.com/Mriga195/loksamadhan',
+    live: 'https://www.loksamadhan.online/'
   },
   {
     name: 'advanced-cpp-journey',
-    description: 'A deep dive into advanced C++ concepts. Showcases implementations of complex algorithms, concurrent programming, memory management, and modern C++17/C++20 features.',
+    description: 'Working through advanced C++: pointer arithmetic, smart pointers, move semantics, templates, SFINAE and the STL, with one hands-on exercise per concept.',
     tech: 'C++',
     techColor: '#f34b7d',
     stars: '4',
-    forks: '0',
     link: 'https://github.com/Mriga195/advanced-cpp-journey'
-  },
-  {
-    name: 'digest-app',
-    description: 'An application designed for content processing and summarization. Implements efficient data ingestion pipelines and provides concise digests for users to quickly consume information.',
-    tech: 'TypeScript',
-    techColor: '#3178c6',
-    stars: '0',
-    forks: '1',
-    link: 'https://github.com/madhurjyadc/digest-app'
-  },
-  {
-    name: 'lok-samadhan',
-    description: 'A public grievance redressal platform built to improve communication between citizens and local authorities. Developed using React, Node.js, Express, and MongoDB.',
-    tech: 'JavaScript',
-    techColor: '#f1e05a',
-    stars: '1',
-    forks: '0',
-    link: 'https://github.com/madhurjyadc/lok-samadhan'
   }
 ];
 
@@ -127,7 +126,7 @@ export default function Portfolio() {
               <p className="text-xl font-light text-text-muted mb-2 md:mb-4">Mriga195</p>
 
               <div className="text-text-main text-sm mb-4 leading-relaxed">
-                Full-Stack Web Developer & Competitive Programmer. Building scalable architectures and solving complex algorithms.
+                Full-stack developer and co-founder of MechMate. IndiaSkills National Top 10 in Web Technologies.
               </div>
 
               <div className="flex flex-col gap-1 text-sm text-text-main mb-6">
@@ -141,7 +140,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex items-center gap-2">
                   <ExternalLink className="w-4 h-4 text-text-muted" />
-                  <a href="https://leetcode.com/Mriganka951" target="_blank" rel="noopener noreferrer" className="hover:text-primary">leetcode.com/Mriganka951</a>
+                  <a href="https://leetcode.com/u/Mriganka951/" target="_blank" rel="noopener noreferrer" className="hover:text-primary">leetcode.com/u/Mriganka951</a>
                 </div>
                 <div className="flex items-center gap-2 mt-2 pt-2 border-t border-border">
                   <FolderOpen className="w-4 h-4 text-text-muted" aria-hidden="true" />
@@ -199,14 +198,15 @@ export default function Portfolio() {
 |_|  |_/_/   \\_\\_| |_/_/   \\_\\_| \\_| |_/_/   \\_\\`}
                   </div>
                   <h2 className="text-xl md:text-2xl font-semibold border-b border-border pb-2 mb-4">
-                    Hi there, I'm Mriganka
+                    Hi there, I&apos;m Mriganka
                   </h2>
                   <p className="text-sm md:text-base text-text-main leading-relaxed mb-4">
-                    I am a highly motivated student pursuing a B.Tech degree at Jorhat Engineering College (Class of 2028). I specialize in modern full-stack web engineering and algorithmic problem-solving.
+                    I&apos;m a B.Tech student at Jorhat Engineering College (Class of 2028). I build full-stack web apps and solve algorithm problems in C++.
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-text-main text-sm md:text-base ml-2">
-                    <li>I’m currently working on scalable Next.js & Node.js web applications</li>
-                    <li>I’m currently learning advanced distributed systems and WebGL</li>
+                    <li>Co-founder of <a href="https://mechmate.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MechMate</a>, a doorstep bike and car repair service in Delhi NCR and Assam. I co-built its Next.js platform</li>
+                    <li>Built <a href="https://github.com/Mriga195/queueless" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">QueueLess</a>, a canteen pre-order system with Razorpay payments</li>
+                    <li>180+ LeetCode problems solved in C++</li>
                     <li>Ranked Top 10 nationally in Web Technologies at IndiaSkills</li>
                     <li>How to reach me: <strong>mrigank195@gmail.com</strong></li>
                   </ul>
@@ -222,10 +222,10 @@ export default function Portfolio() {
                   <div key={repo.name} className="p-4 flex flex-col sm:flex-row sm:items-center justify-between hover:bg-[#1c2128] transition-colors">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <a href={repo.link} className="text-primary font-code text-lg font-semibold hover:underline">
+                        <a href={repo.link} target="_blank" rel="noopener noreferrer" className="text-primary font-code text-lg font-semibold hover:underline">
                           {repo.name}
                         </a>
-                        <span className="border border-border rounded-full px-2 py-0.5 text-xs text-text-muted">Public</span>
+                        <span className="border border-border rounded-full px-2 py-0.5 text-xs text-text-muted">{repo.badge ?? 'Public'}</span>
                       </div>
                       <p className="text-sm text-text-muted mb-2 max-w-2xl">{repo.description}</p>
                       <div className="flex items-center gap-4 text-xs text-text-muted">
@@ -233,10 +233,16 @@ export default function Portfolio() {
                           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: repo.techColor }}></span>
                           <span>{repo.tech}</span>
                         </div>
-                        <div className="flex items-center gap-1 hover:text-primary cursor-pointer">
+                        {repo.live && (
+                          <a href={repo.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary">
+                            <ExternalLink className="w-3 h-3" />
+                            <span>Live</span>
+                          </a>
+                        )}
+                        {repo.stars && <div className="flex items-center gap-1 hover:text-primary cursor-pointer">
                           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" className="fill-current"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path></svg>
                           <span>{repo.stars}</span>
-                        </div>
+                        </div>}
                       </div>
                     </div>
                     <div className="mt-4 sm:mt-0 flex flex-col items-end gap-2">
@@ -315,13 +321,13 @@ export default function Portfolio() {
                       <span className="text-text-main">React, Next.js, CSS3, Tailwind CSS</span>
 
                       <span className="text-[#35bf5c] font-bold">Backend</span>
-                      <span className="text-text-main">Node.js, Express, Qt</span>
+                      <span className="text-text-main">Node.js, Express, Prisma, Qt</span>
 
                       <span className="text-[#35bf5c] font-bold">Databases</span>
                       <span className="text-text-main">MongoDB, PostgreSQL</span>
 
                       <span className="text-[#35bf5c] font-bold">Tools</span>
-                      <span className="text-text-main">Git, Docker, Linux</span>
+                      <span className="text-text-main">Git, Docker, Linux, Cloudflare Workers, Render</span>
                     </div>
                   </div>
                 </div>
