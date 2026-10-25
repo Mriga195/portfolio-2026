@@ -204,6 +204,7 @@ export default function Portfolio() {
                     I&apos;m a B.Tech student at Jorhat Engineering College (Class of 2028). I build full-stack web apps and solve algorithm problems in C++.
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-text-main text-sm md:text-base ml-2">
+                    <li>Full-stack engineer at Encamp Adventures since June 2026, building their travel booking site and admin dashboards</li>
                     <li>Co-founder of <a href="https://mechmate.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MechMate</a>, a doorstep bike and car repair service in Delhi NCR and Assam. I co-built its Next.js platform</li>
                     <li>Built <a href="https://github.com/Mriga195/queueless" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">QueueLess</a>, a canteen pre-order system with Razorpay payments</li>
                     <li>180+ LeetCode problems solved in C++</li>
